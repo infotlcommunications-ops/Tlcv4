@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './styles/global.css';
+import { AuthProvider } from './contexts/AuthContext';
+import { SiteDataProvider } from './contexts/SiteDataContext';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <AuthProvider>
+        <SiteDataProvider>
+          <App />
+        </SiteDataProvider>
+      </AuthProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
