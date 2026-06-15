@@ -18,7 +18,7 @@ export default function HomePage() {
     <div className="page-stack">
       <section className="hero card hero-section">
         <div>
-          <span className="eyebrow">Realtime ISP Website</span>
+          <span className="eyebrow">Experience Seamless Connectivity</span>
           <h1>{settings.heroTitle}</h1>
           <p>{settings.heroSubtitle}</p>
           <div className="hero-actions">
